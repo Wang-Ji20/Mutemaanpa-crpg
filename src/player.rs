@@ -2,6 +2,9 @@ use bevy::prelude::*;
 
 use crate::movement::*;
 
+/// PlayerPlugin
+/// 
+/// Player plugin adds a sprite to game, which can be controlled by keyboard.
 pub struct PlayerPlugin;
 
 impl Plugin for PlayerPlugin {
@@ -36,8 +39,6 @@ fn setup_scene(
             index: 1,
         },
         Velocity::default(),
-        PhysicalTranslation::default(),
-        PreviousPhysicalTranslation::default(),
     ));
 }
 
