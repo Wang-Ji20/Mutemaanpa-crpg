@@ -5,7 +5,6 @@ use player::PlayerPlugin;
 
 mod dm;
 mod movement;
-mod npc;
 mod player;
 mod dialogue;
 
