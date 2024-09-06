@@ -1,4 +1,6 @@
 use bevy::prelude::*;
+use bevy_yarnspinner::prelude::{YarnProject, YarnSpinnerPlugin};
+use bevy_yarnspinner_example_dialogue_view::ExampleYarnSpinnerDialogueViewPlugin;
 
 /// There are two part in this plugin:
 ///
@@ -7,7 +9,21 @@ use bevy::prelude::*;
 pub struct DialoguePlugin;
 
 impl Plugin for DialoguePlugin {
-    fn build(&self, _app: &mut App) {}
+    fn build(&self, app: &mut App) {
+        app.add_plugins(YarnSpinnerPlugin::new());
+        app.add_plugins(ExampleYarnSpinnerDialogueViewPlugin::new());
+        app.add_systems(
+            Update,
+            spawn_dialogue_runner.run_if(resource_added::<YarnProject>),
+        );
+    }
+}
+
+fn spawn_dialogue_runner(mut commands: Commands, project: Res<YarnProject>) {
+    let mut dialogue_runner = project.create_dialogue_runner();
+    // Start the dialog at the node with the title "Start"
+    dialogue_runner.start_node("HelloWorld");
+    commands.spawn(dialogue_runner);
 }
 
 #[derive(Debug, Clone, Component)]

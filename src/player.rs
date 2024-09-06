@@ -23,7 +23,7 @@ fn setup_scene(
     mut texture_atlas_layouts: ResMut<Assets<TextureAtlasLayout>>,
 ) {
     commands.spawn(Camera2dBundle::default());
-    let texture = asset_server.load("Characters/Basic Charakter Spritesheet.png");
+    let texture = asset_server.load("image/Characters/Basic Charakter Spritesheet.png");
 
     let layout = TextureAtlasLayout::from_grid(UVec2::splat(48), 4, 4, None, None);
     let texture_atlas_layout = texture_atlas_layouts.add(layout);
