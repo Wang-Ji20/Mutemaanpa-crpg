@@ -1,0 +1,37 @@
+title: HelloWorld
+position: -234,-359
+---
+Hello World! To continue the dialogue, click with your mouse, press the space bar or the enter key. #line:13466645 
+These are options. You can select one by clicking on it or pressing the corresponding number on your keyboard. #line:11565625 
+-> Some cool option #line:5216764 
+-> Some other cool option #line:10030459 
+Now we'll jump to another node! #line:15264079 
+<<jump AnotherNode>>
+
+===
+
+title: AnotherNode
+position: -219,-60
+---
+<<declare $animal = "" as string>>
+Now, a character will talk. Notice how the upper left corner of the dialogue will show their name. #line:12091883 
+Hohenheim: Hi, I'm Jan Hohenheim, creator of Yarn Spinner for Rust. I hope you enjoy using it! #line:5061964 
+Let's set a condition. Do you prefer dogs or cats? #line:4367267 
+-> Dogs #line:6111773 
+    <<set $animal = "dog">>
+-> Cats #line:12732625 
+    <<set $animal = "cats">>
+-> Turtles #line:1345987 
+    I, uuuh... okay, why not. #line:2127636 
+    <<set $animal = "turtles">>
+Now let's print the result of the condition. Your preference is... #line:11107330 
+(Drum roll) #line:13061194 
+<<if $animal == "dog">>
+Dogs! Arf Arf! #line:11607190 
+<<elseif $animal == "cats">>
+Cats! (Can't say I agree, but you do you) #line:5530716 
+<<else>>
+Turtles! Solid choice. #line:15896103 
+<<endif>>
+Et voilà! That was all. Thanks for checking out Yarn Spinner for Rust! Continuing from the last node will exit the dialogue. #line:12290890 
+===

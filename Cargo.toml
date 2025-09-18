@@ -1,10 +1,5 @@
-[package]
-name = "Mutemaanpa-crpg"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-bevy = "0.14.1"
-bevy_yarnspinner = "0.3.1"
-bevy_yarnspinner_example_dialogue_view = "0.3.0"
-rand = "0.8.5"
+[workspace]
+resolver = "2"
+members = [
+    "./extension/rust"
+]
