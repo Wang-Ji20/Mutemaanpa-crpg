@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://5x7pogk4h1xt"]
+[gd_scene load_steps=5 format=3 uid="uid://5x7pogk4h1xt"]
 
 [ext_resource type="Texture2D" uid="uid://bmkughcuqsegy" path="res://asset/image/ui/icon.svg" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bv42g323prh5f" path="res://addons/YarnSpinner-Godot/Scenes/DefaultDialogueSystem.tscn" id="2_v0l8b"]
+[ext_resource type="Resource" uid="uid://vxsv8ta38jb4" path="res://data/dialogue/ckdisco.yarnproject" id="3_wp4xf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_itxqv"]
 radius = 40.0
@@ -17,3 +19,24 @@ texture = ExtResource("1_ig7tw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(507, 283)
 shape = SubResource("CapsuleShape2D_itxqv")
+
+[node name="YarnSpinnerCanvasLayer" parent="." instance=ExtResource("2_v0l8b")]
+
+[node name="DialogueRunner" parent="YarnSpinnerCanvasLayer" index="0"]
+yarnProject = ExtResource("3_wp4xf")
+autoStart = true
+startNode = "FriedChickenEntry"
+
+[node name="OptionsPresenter" parent="YarnSpinnerCanvasLayer" index="3" node_paths=PackedStringArray("lastLineText", "lastLineContainer", "lastLineCharacterNameText")]
+showsLastLine = true
+lastLineText = NodePath("PresenterControl/LastLineText")
+lastLineContainer = NodePath("PresenterControl/LastLineText")
+lastLineCharacterNameText = NodePath("PresenterControl/LastLineCharacterNameText")
+
+[node name="LastLineText" parent="YarnSpinnerCanvasLayer/OptionsPresenter/PresenterControl" index="1"]
+visible = true
+
+[node name="LastLineCharacterNameText" parent="YarnSpinnerCanvasLayer/OptionsPresenter/PresenterControl" index="2"]
+visible = true
+
+[editable path="YarnSpinnerCanvasLayer"]

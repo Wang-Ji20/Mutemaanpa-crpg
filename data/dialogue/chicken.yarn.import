@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarnscript"
+type="Resource"
+uid="uid://b6368jlwx853u"
+path="res://.godot/imported/chicken.yarn-78546c58b1200bd68d99abb33c624b3f.tres"
+
+[deps]
+
+source_file="res://data/dialogue/chicken.yarn"
+dest_files=["res://.godot/imported/chicken.yarn-78546c58b1200bd68d99abb33c624b3f.tres"]
+
+[params]
+

@@ -1,25 +1,25 @@
-title: FriedChickenEntry
+﻿title: FriedChickenEntry
 position: -164,-380
 ---
-[内陆帝国 难度：中等]
-炸鸡：宝贝，宝贝，你在想什么？你想变成一块鲜嫩多汁，松脆可口的*炸鸡*吗？  
-你说你不知道德洛丽丝点碧喜不喜欢吃炸鸡？她会喜欢的。
+[内陆帝国 难度：中等] #line:09d9f29 
+炸鸡：宝贝，宝贝，你在想什么？你想变成一块鲜嫩多汁，松脆可口的*炸鸡*吗？   #line:0ec50a4 
+你说你不知道德洛丽丝点碧喜不喜欢吃炸鸡？她会喜欢的。 #line:0c338ef 
 
--> 谁是德洛丽丝点碧？
-<<jump WhoIsDolores>>
--> 你在哪里?
-<<jump WhereAreYou>>
--> 作为一块炸鸡，你感觉到 *悲伤* 吗
-<<jump SadChicken>>
+-> 谁是德洛丽丝点碧？ #line:0214c44 
+    <<jump WhoIsDolores>>
+-> 你在哪里? #line:0435d64 
+    <<jump WhereAreYou>>
+-> 作为一块炸鸡，你感觉到 *悲伤* 吗 #line:01b94a3 
+    <<jump SadChicken>>
 
 ===
 
 title: WhoIsDolores
 position: -154,79
 ---
-炸鸡: 你问我谁是德洛丽丝点碧? 我只是一块炸鸡, 我怎么可能知道?
+炸鸡: 你问我谁是德洛丽丝点碧? 我只是一块炸鸡, 我怎么可能知道? #line:05000ba 
 
--> 好吧, 我们谈谈别的
+-> 好吧, 我们谈谈别的 #line:0d50c46 
 <<jump ChangeSubject>>
 
 ===
@@ -27,11 +27,12 @@ position: -154,79
 title: WhereAreYou
 position: -527,81
 ---
-炸鸡：我在很远很远的地方。很远很远。
+炸鸡：我在很远很远的地方。很远很远。 #line:0627bc7 
 
--> 很远很远？
+-> 很远很远？ #line:07b1503 
 <<jump VeryFar>>
--> 你到底在哪里
+
+-> 你到底在哪里 #line:0f233f2 
 <<jump VeryFar>>
 
 ===
@@ -39,11 +40,12 @@ position: -527,81
 title: VeryFar
 position: -528,352
 ---
-炸鸡：很远很远。
+炸鸡：很远很远。 #line:0131cec 
 
--> 很远很远？
+-> 很远很远？ #line:06df568 
 <<jump VeryFar>>
--> 我们还是谈一谈炸鸡, 好吗?
+
+-> 我们还是谈一谈炸鸡, 好吗? #line:0049069 
 <<jump ChangeSubject>>
 
 ===
@@ -51,13 +53,15 @@ position: -528,352
 title: ChangeSubject
 position: -155,-184
 ---
-炸鸡: 好的. 谁不喜欢一块鲜嫩多汁，松脆可口的*炸鸡*呢?
+炸鸡: 好的. 谁不喜欢一块鲜嫩多汁，松脆可口的*炸鸡*呢? #line:0988f84 
 
--> 谁是德洛丽丝 点 碧？
+-> 谁是德洛丽丝点碧？ #line:052565e 
 <<jump WhoIsDolores>>
--> 你在哪里？
+
+-> 你在哪里？ #line:0848eae 
 <<jump WhereAreYou>>
--> 作为一块炸鸡，你感觉到 *悲伤* 吗
+
+-> 作为一块炸鸡，你感觉到 *悲伤* 吗 #line:0b317af 
 <<jump SadChicken>>
 
 ===
@@ -65,14 +69,16 @@ position: -155,-184
 title: SadChicken
 position: 162,66
 ---
-炸鸡: 你问我, 一块炸鸡会不会*悲伤*? 不.  
-我是一块胸大肌, 而胸大肌是不会感到 *悲伤* 的.
+炸鸡: 你问我, 一块炸鸡会不会*悲伤*? 不.   #line:06bd8f2 
+我是一块胸大肌, 而胸大肌是不会感到 *悲伤* 的. #line:00f71e2 
 
--> 你的兄弟姐妹去了哪里?
+-> 你的兄弟姐妹去了哪里? #line:0890006 
 <<jump Siblings>>
--> 那你 *快乐* 吗?
+
+-> 那你 *快乐* 吗? #line:07a5eeb 
 <<jump HappyChicken>>
--> 我也是一块 *胸大肌*, 而且我还比你更加 *强壮*
+
+-> 我也是一块 *胸大肌*, 而且我还比你更加 *强壮* #line:0002bab 
 <<jump StrongerChicken>>
 
 ===
@@ -80,7 +86,7 @@ position: 162,66
 title: HappyChicken
 position: 516,-62
 ---
-炸鸡: 快乐就像油里滋滋的气泡, 虽然煎熬, 但也十分短暂.
+炸鸡: 快乐就像油里滋滋的气泡, 虽然煎熬, 但也十分短暂. #line:0242ed9 
 <<jump SadChicken>>
 
 ===
@@ -88,7 +94,7 @@ position: 516,-62
 title: StrongerChicken
 position: 519,114
 ---
-炸鸡: 但你永远无法成为一块*鲜嫩多汁*的炸鸡.
+炸鸡: 但你永远无法成为一块*鲜嫩多汁*的炸鸡. #line:0fa07eb 
 <<jump SadChicken>>
 
 ===
@@ -96,17 +102,20 @@ position: 519,114
 title: Siblings
 position: 163,302
 ---
-炸鸡: 首先是, 炸鸡腿兄. 他早就端了出去, 现在在 A201 号顾客的桌子上.  
-炸鸡翅被员工偷偷吃掉了. 鸡头和鸡脖子早在昨天就已经不见了.  
-鸡胸的其他位置. 它们也许已经打碎变成了一滩肉泥.
+炸鸡: 首先是, 炸鸡腿兄. 他早就端了出去, 现在在 A201 号顾客的桌子上.   #line:0cf9e14 
+炸鸡翅被员工偷偷吃掉了. 鸡头和鸡脖子早在昨天就已经不见了.   #line:0edd6e1 
+鸡胸的其他位置. 它们也许已经打碎变成了一滩肉泥. #line:0ae75b0 
 
--> 等等...... 我总感觉少了些什么. 你的 *阴茎* 呢?
+-> 等等...... 我总感觉少了些什么. 你的 *阴茎* 呢? #line:0bc6265 
 <<jump PenisQuestion>>
--> 对不起, 这听上去很难受...
+
+-> 对不起, 这听上去很难受... #line:02bf369 
 <<jump Sympathy>>
--> 你想成为炸鸡*巨星*, 和 A201 号顾客身上的炸鸡腿团聚吗?
+
+-> 你想成为炸鸡*巨星*, 和 A201 号顾客身上的炸鸡腿团聚吗? #line:0800b4d 
 <<jump FriedStar>>
--> 在天上的 99 个世界里, 也许有一个世界, 一块裹满土豆泥的鸡大胸在啃一个戴着眼镜的德洛里斯 点 碧
+
+-> 在天上的 99 个世界里, 也许有一个世界, 一块裹满土豆泥的鸡大胸在啃一个戴着眼镜的德洛里斯 点 碧 #line:025dad6 
 <<jump ParallelWorld>>
 
 ===
@@ -114,13 +123,15 @@ position: 163,302
 title: PenisQuestion
 position: 530,307
 ---
-炸鸡: 你会问一位女士, 你有*阴茎*吗?
+炸鸡: 你会问一位女士, 你有*阴茎*吗? #line:0685b1f 
 
--> 呃, 我想, .... 会?
+-> 呃, 我想, .... 会? #line:02861a8 
 <<jump PenisYes>>
--> 对不起. 那你有 ... 吗?
+
+-> 对不起. 那你有 ... 吗? #line:00c0e4f 
 <<jump PenisOther>>
--> 转到其他话题
+
+-> 转到其他话题 #line:0b11530 
 <<jump Siblings>>
 
 ===
@@ -128,9 +139,9 @@ position: 530,307
 title: ParallelWorld
 position: 164,501
 ---
-炸鸡: 我想会有的.
+炸鸡: 我想会有的. #line:060a3d2 
 
--> 继续
+-> 继续 #line:001eabb 
 <<jump Ending>>
 
 ===
@@ -138,19 +149,19 @@ position: 164,501
 title: Ending
 position: 164,693
 ---
-一阵悲伤淹没了你. 你不记得 德洛丽丝 点 碧是不是戴着她那副金边的眼镜.  
-说到底, 德洛丽丝 点 碧 到底是谁? 你只是脑中突然回想起这个名字.  
-也许你需要在夜深的时候静一静 想一想, 再来点 *屌炸了* 的 安非他命.
+一阵悲伤淹没了你. 你不记得 德洛丽丝 点 碧是不是戴着她那副金边的眼镜.   #line:011c86b 
+说到底, 德洛丽丝 点 碧 到底是谁? 你只是脑中突然回想起这个名字.   #line:0486757 
+也许你需要在夜深的时候静一静 想一想, 再来点 *屌炸了* 的 安非他命. #line:0be3a4e 
 
-士气 -1 解锁思维阁 "寻找德洛丽丝 点 碧
-title: Sympathy
----
+士气 -1 解锁思维阁 "寻找德洛丽丝 点 碧 #line:0352b44 
+title: Sympathy #line:09ea2e9 
+--- #line:0c8c9e3 
 
 ===
 title: FriedStar
 position: 418,503
 ---
-炸鸡: 在炸鸡的世界里, 没有谁是明星. 大家都是同志, 没有谁有超出炸鸡的特权.
+炸鸡: 在炸鸡的世界里, 没有谁是明星. 大家都是同志, 没有谁有超出炸鸡的特权. #line:09a0f0b 
 <<jump Siblings>>
 
 ===
@@ -158,20 +169,20 @@ position: 418,503
 title: PenisYes
 position: 854,413
 ---
-炸鸡: 没有.
+炸鸡: 没有. #line:06432e4 
 <<jump PenisQuestion>>
 ===
 
 title: PenisOther
 position: 849,206
 ---
-炸鸡: 也没有.
+炸鸡: 也没有. #line:0a6b214 
 <<jump PenisQuestion>>
 ===
 
 title: Sympathy
 position: -143,504
 ---
-炸鸡: 亲爱的, 别难受了. 想一想这块 *鲜嫩多汁* 的炸鸡吧!
+炸鸡: 亲爱的, 别难受了. 想一想这块 *鲜嫩多汁* 的炸鸡吧! #line:0a5f8fe 
 <<jump Siblings>>
 ===

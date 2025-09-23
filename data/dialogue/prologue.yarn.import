@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarnscript"
+type="Resource"
+uid="uid://cgaxg0bbl2k7c"
+path="res://.godot/imported/prologue.yarn-3b5bdf2333e785e4f86c1b56177b9586.tres"
+
+[deps]
+
+source_file="res://data/dialogue/prologue.yarn"
+dest_files=["res://.godot/imported/prologue.yarn-3b5bdf2333e785e4f86c1b56177b9586.tres"]
+
+[params]
+
