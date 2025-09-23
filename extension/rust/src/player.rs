@@ -12,8 +12,7 @@ struct Player {
 #[godot_api]
 impl ICharacterBody2D for Player {
     fn init(base: Base<CharacterBody2D>) -> Self {
-        godot_print!("Hello, world!"); // Prints to the Godot console
-
+        godot_print!("Hello, world!");
         Self { speed: 400.0, base }
     }
 
