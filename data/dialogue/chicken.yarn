@@ -1,0 +1,177 @@
+title: FriedChickenEntry
+position: -164,-380
+---
+[内陆帝国 难度：中等]
+炸鸡：宝贝，宝贝，你在想什么？你想变成一块鲜嫩多汁，松脆可口的*炸鸡*吗？  
+你说你不知道德洛丽丝点碧喜不喜欢吃炸鸡？她会喜欢的。
+
+-> 谁是德洛丽丝点碧？
+<<jump WhoIsDolores>>
+-> 你在哪里?
+<<jump WhereAreYou>>
+-> 作为一块炸鸡，你感觉到 *悲伤* 吗
+<<jump SadChicken>>
+
+===
+
+title: WhoIsDolores
+position: -154,79
+---
+炸鸡: 你问我谁是德洛丽丝点碧? 我只是一块炸鸡, 我怎么可能知道?
+
+-> 好吧, 我们谈谈别的
+<<jump ChangeSubject>>
+
+===
+
+title: WhereAreYou
+position: -527,81
+---
+炸鸡：我在很远很远的地方。很远很远。
+
+-> 很远很远？
+<<jump VeryFar>>
+-> 你到底在哪里
+<<jump VeryFar>>
+
+===
+
+title: VeryFar
+position: -528,352
+---
+炸鸡：很远很远。
+
+-> 很远很远？
+<<jump VeryFar>>
+-> 我们还是谈一谈炸鸡, 好吗?
+<<jump ChangeSubject>>
+
+===
+
+title: ChangeSubject
+position: -155,-184
+---
+炸鸡: 好的. 谁不喜欢一块鲜嫩多汁，松脆可口的*炸鸡*呢?
+
+-> 谁是德洛丽丝 点 碧？
+<<jump WhoIsDolores>>
+-> 你在哪里？
+<<jump WhereAreYou>>
+-> 作为一块炸鸡，你感觉到 *悲伤* 吗
+<<jump SadChicken>>
+
+===
+
+title: SadChicken
+position: 162,66
+---
+炸鸡: 你问我, 一块炸鸡会不会*悲伤*? 不.  
+我是一块胸大肌, 而胸大肌是不会感到 *悲伤* 的.
+
+-> 你的兄弟姐妹去了哪里?
+<<jump Siblings>>
+-> 那你 *快乐* 吗?
+<<jump HappyChicken>>
+-> 我也是一块 *胸大肌*, 而且我还比你更加 *强壮*
+<<jump StrongerChicken>>
+
+===
+
+title: HappyChicken
+position: 516,-62
+---
+炸鸡: 快乐就像油里滋滋的气泡, 虽然煎熬, 但也十分短暂.
+<<jump SadChicken>>
+
+===
+
+title: StrongerChicken
+position: 519,114
+---
+炸鸡: 但你永远无法成为一块*鲜嫩多汁*的炸鸡.
+<<jump SadChicken>>
+
+===
+
+title: Siblings
+position: 163,302
+---
+炸鸡: 首先是, 炸鸡腿兄. 他早就端了出去, 现在在 A201 号顾客的桌子上.  
+炸鸡翅被员工偷偷吃掉了. 鸡头和鸡脖子早在昨天就已经不见了.  
+鸡胸的其他位置. 它们也许已经打碎变成了一滩肉泥.
+
+-> 等等...... 我总感觉少了些什么. 你的 *阴茎* 呢?
+<<jump PenisQuestion>>
+-> 对不起, 这听上去很难受...
+<<jump Sympathy>>
+-> 你想成为炸鸡*巨星*, 和 A201 号顾客身上的炸鸡腿团聚吗?
+<<jump FriedStar>>
+-> 在天上的 99 个世界里, 也许有一个世界, 一块裹满土豆泥的鸡大胸在啃一个戴着眼镜的德洛里斯 点 碧
+<<jump ParallelWorld>>
+
+===
+
+title: PenisQuestion
+position: 530,307
+---
+炸鸡: 你会问一位女士, 你有*阴茎*吗?
+
+-> 呃, 我想, .... 会?
+<<jump PenisYes>>
+-> 对不起. 那你有 ... 吗?
+<<jump PenisOther>>
+-> 转到其他话题
+<<jump Siblings>>
+
+===
+
+title: ParallelWorld
+position: 164,501
+---
+炸鸡: 我想会有的.
+
+-> 继续
+<<jump Ending>>
+
+===
+
+title: Ending
+position: 164,693
+---
+一阵悲伤淹没了你. 你不记得 德洛丽丝 点 碧是不是戴着她那副金边的眼镜.  
+说到底, 德洛丽丝 点 碧 到底是谁? 你只是脑中突然回想起这个名字.  
+也许你需要在夜深的时候静一静 想一想, 再来点 *屌炸了* 的 安非他命.
+
+士气 -1 解锁思维阁 "寻找德洛丽丝 点 碧
+title: Sympathy
+---
+
+===
+title: FriedStar
+position: 418,503
+---
+炸鸡: 在炸鸡的世界里, 没有谁是明星. 大家都是同志, 没有谁有超出炸鸡的特权.
+<<jump Siblings>>
+
+===
+
+title: PenisYes
+position: 854,413
+---
+炸鸡: 没有.
+<<jump PenisQuestion>>
+===
+
+title: PenisOther
+position: 849,206
+---
+炸鸡: 也没有.
+<<jump PenisQuestion>>
+===
+
+title: Sympathy
+position: -143,504
+---
+炸鸡: 亲爱的, 别难受了. 想一想这块 *鲜嫩多汁* 的炸鸡吧!
+<<jump Siblings>>
+===
