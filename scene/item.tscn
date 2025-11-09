@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfw2eyenlovbl"]
+
+[ext_resource type="Texture2D" uid="uid://scttqa3j08iy" path="res://asset/image/item/egg.png" id="1_4w2rt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akoh1"]
+
+[node name="Item" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4w2rt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_akoh1")

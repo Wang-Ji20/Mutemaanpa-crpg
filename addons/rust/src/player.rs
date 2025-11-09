@@ -3,10 +3,12 @@ use godot::prelude::*;
 
 #[derive(GodotClass)]
 #[class(base=CharacterBody2D)]
-struct Player {
+pub struct Player {
+    base: Base<CharacterBody2D>,
+
     speed: f64,
 
-    base: Base<CharacterBody2D>,
+    
 }
 
 #[godot_api]

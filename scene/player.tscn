@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjgqi58htbi5g"]
+
+[ext_resource type="Texture2D" uid="uid://bmkughcuqsegy" path="res://asset/image/ui/icon.svg" id="1_xo3ru"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_itxqv"]
+radius = 40.0
+height = 120.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xo3ru"]
+radius = 152.95
+
+[node name="CharacterBody2D" type="Player"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(506, 284)
+texture = ExtResource("1_xo3ru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(507, 283)
+shape = SubResource("CapsuleShape2D_itxqv")
+
+[node name="HandArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HandArea"]
+position = Vector2(505, 287)
+shape = SubResource("CircleShape2D_xo3ru")
+debug_color = Color(0.6503992, 0.5097163, 0.29328448, 0.41960785)
